@@ -1,15 +1,18 @@
 {
   "name": "@containership/containership.abstraction.host",
   "version": "1.0.3",
-  "description": "",
+  "description": "Containership abstraction host",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
-    "lint": "./node_modules/.bin/eslint ."
+    "lint": "echo \"Running lint tests...\n\" && ./node_modules/.bin/eslint .",
+    "dependency-check": "echo \"Running dependency checks...\n\" && ./node_modules/.bin/depcheck . --ignores depchecks"
   },
   "author": "Containership Developers <developers@containership.io>",
   "license": "GPL-3.0",
   "devDependencies": {
+    "@containership/eslint-config-containership.eslint.backend": "^1.0.0",
+    "depcheck": "^0.6.7",
     "eslint": "^3.19.0"
   },
   "dependencies": {
